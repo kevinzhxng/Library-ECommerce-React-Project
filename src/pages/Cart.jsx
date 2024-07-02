@@ -39,7 +39,7 @@ export default function Cart({ cart, changeQuantity }) {
                           min={0}
                           max={99}
                           class="cart__input"
-                          value={book.quantity}
+                          value={book}
                           onChange={(event) => changeQuantity(book, event.target.value)}
                         />
                       </div>
