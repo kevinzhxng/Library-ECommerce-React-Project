@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Explore() {
   return (
@@ -8,8 +9,8 @@ export default function Explore() {
           <h2>
             Explore more <span className="purple">Books</span>
           </h2>
-          <a href="/books">
-          <button className="btn">Explore Books</button></a>
+          <Link to="/books">
+          <button className="btn">Explore Books</button></Link>
         </div>
       </div>
     </section>
