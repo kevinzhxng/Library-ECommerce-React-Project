@@ -17,7 +17,7 @@ export default function Book({ book }) {
         if (mountedRef.current) {
           setImg(image);
         }
-      }, 250);
+      }, 300);
     };
     return () => {
       //when trhe component unmounts
@@ -47,11 +47,11 @@ export default function Book({ book }) {
         </>
       ) : (
         <>
-          <div className="book__img--skeleton">
+          <div className="book__img--skeleton"></div>
             <div className="skeleton book__title--skeleton"></div>
             <div className="skeleton book__rating--skeleton"></div>
             <div className="skeleton book__price--skeleton"></div>
-          </div>
+          
         </>
       )}
     </div>
