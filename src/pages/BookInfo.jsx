@@ -17,7 +17,7 @@ export default function BookInfo({ books, addToCart, cart }) {
   }
 
   function bookExistsOnCart() {
-    const dupe = cart.find(book => book.id === +id);
+    const dupe = cart.find((book) => book.id === +id);
     return dupe;
   }
 
@@ -62,14 +62,15 @@ export default function BookInfo({ books, addToCart, cart }) {
                     reiciendis, tenetur reprehenderit est maxime aliquam.
                   </p>
                 </div>
-                {
-                bookExistsOnCart() ? 
-                  <button className="btn">View Cart</button>
-                 : 
+                {bookExistsOnCart() ? (
+                  <Link to={`/cart`} className="book__link">
+                    <button className="btn">View Cart</button>
+                  </Link>
+                ) : (
                   <button className="btn" onClick={() => addBookToCart(book)}>
                     Add to Cart
                   </button>
-                }
+                )}
               </div>
             </div>
           </div>

@@ -395,29 +395,35 @@ FEATURES
 .book__img--skeleton {
   width: 100%;
   max-width: 250px;
-  height: 320px;
+  height: 300px;
   background-color: rgb(204, 204, 204);
   margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .skeleton {
   background-color: rgb(227, 227, 227) !important;
   margin-bottom: 8px;
+  
 }
 
 .book__title--skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .book__rating--skeleton {
   width: 100px;
   height: 19px;
+  max-width: 250px;
 }
 
 .book__price--skeleton {
   width : 200px;
   height: 19px;
+  max-width: 250px;
 }
 
 .book__link {
