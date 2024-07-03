@@ -1,5 +1,5 @@
 import React from "react";
-import UndrawBooks from "../assets/Undraw_Books.svg";
+import UndrawBooks from "../assets/undraw_reading_list_re_bk72.svg";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Landing() {
